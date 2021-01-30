@@ -9,8 +9,70 @@ and open the template in the editor.
         <title>HTML Assignment</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" />
+        <style>
+            body {background-color: powderblue;}
+            .head-footer   {color: blue;   background-color: #e6ebef; hight: 100%;
+                            padding: 12px;
+                            border: 1px solid #ccc;
+                            border-radius: 4px;
+                            box-sizing: border-box;
+                            margin-top: 6px;
+                            margin-bottom: 6px;}
+            p    {color: black;}
+            #field {width: 250px;}
+            .input {
+                width: 20%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 6px;
+            }
+            p{text-align: center;}
+
+        </style>
+
     </head>
     <body>
-        <div>My HTML Assignment</div>
+        <header><h1 class="head-footer">A Form</h1></header>
+        <h2>Form Section</h2>
+        <form id="info" onsubmit = "demonstrateStandardScript();">
+            <label for="email">E-mail:</label><br/> <input type="text" class="input"><br/> <br/> 
+            <label for="psw">Password:</label> <br/> <input type="password" class="input">
+            <br/> <br/> 
+            <label>Language</label>					
+            <select>
+                <option value="english">English</option>
+                <option value="french">French</option>
+
+            </select>
+
+            <fieldset id="field">
+                <legend>Color Choice</legend>
+                <label>Red</label>
+                <input type = "radio" name = "red"/>
+                <label>Blue</label>
+                <input type = "radio" name = "blue"/>
+                <label>Yellow</label>
+                <input type = "radio" name = "Yellow"/>
+
+            </fieldset>
+            <br/><br/>
+            <input type="submit" value="Submit" />
+            <input type="submit" value="reset" />
+        </form>
+        <form id="PersonalInformation" onsubmit = "demonstrateStandardScript();">
+            <h2>Other Section</h2> 
+            <img src="http://placekitten.com/400/200" alt="Kitten">
+            <br/><br/>
+            <p>This is a link to a more styled version of this page: 
+                <a href="http://kirkwood.edu" target="_blank" >Better Page</a></p>
+        </form>
+        <footer class="head-footer">
+
+            <p>Copyright 2021</p>
+        </footer>
     </body>
 </html>
